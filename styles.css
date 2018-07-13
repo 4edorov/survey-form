@@ -1,0 +1,16 @@
+body {
+  background-color: aquamarine;
+}
+
+.form-layout {
+  background-color: burlywood;
+  max-width: 1000px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
