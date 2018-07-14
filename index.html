@@ -12,12 +12,32 @@
       <p id="description" align="center">Let us know how we can improve freeCodeCamp</p>
       <form id="survey-form" class="form-flex">
         <div class="form-row">
-          <div>* Name</div>
-          <input type="text">
+          <div class="half-row name">
+            <div class="field-name">*Name:</div>
+          </div>
+          <div class="half-row input">
+            <input id="name" class="field-context" type="text" name="name" required>
+          </div>
         </div>
+        <div class="form-row">
+          <div class="half-row name">
+            <div class="field-name">*Email:</div>
+          </div>
+          <div class="half-row input">
+            <input id="email" class="field-context" type="email" name="email" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="half-row name">
+            <div class="field-name">*Age:</div>
+          </div>
+          <div class="half-row input">
+            <input id="number" class="field-context" type="text" name="age" required pattern="[0-9]{0,2}">
+          </div>
+        </div>
+        <input type="submit">
       </form>
     </div>
     <script src="scripts.js"></script>
-    <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
   </body>
 </html>

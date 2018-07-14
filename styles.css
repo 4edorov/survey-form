@@ -1,16 +1,69 @@
 body {
-  background-color: aquamarine;
+  background-color: royalblue;
+  min-width: 500px;
+}
+
+input:required:invalid, input:focus:invalid {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATASURBVGhD7ZpXqB1VFIav3YgSUjT2SFQSEgsqIj6oEUWNoJiIsbxEwQKKFX0RFBRFQR9ETbCLIglRE5QoKmLBgk8WQkAUVLBiw4a95fs2LBgmc2f2nDunJOSH72HPzJ7ZZ3b715oztlmbsPaGc+E+eBW+hJ/hf/gDvoV18CTcAMfC9jASmgpXwttgg9vyKzwGx8MWMHBNh9vgF4hG+cYfh0tgPuwOxTc+GebAaXATvAH/QNR/D06HgfwgH3IhfA8+/D94Ck6BbaCt/LFXwccQP+gl8Af3TfbCMxAPfBoOhC60NSyBL8B7/w6+sM41Fz4FH/IV2AP90I5wF9jTPut+2Ao60eEQQ8lu3xX6LefRDxA9vy1MSA6db8AbroAJ37CFDgKX8Hh2zz3jnIjh5BK5JQxa+0G8yNs90FauTs+CN3gFBtkTZR0Bv4HzpvXcdMXwRzixZ3hgyLoIbI+9M8UDOdoZvgMr9mt16kWx9C9LpQy5Y1vB1WKUNAvcX/4G506t9E7aDsdjV5tdl7oTfMkPpFKNroBR7I3QXmCP2DN6t3H1DrSdG/biROy4c7KNT1sDtvH8VKrQTPACJ3rOjfcE4w7r+JachHqmXDl014L1jVeuhxydDdZxe6iUQZEXrEylZr0IXl/kGsiRu/SHUK6/GJo0Df4Fg7bKF3cveDPjiSZp7rxZuSGvQ47mQbmu6CByFD15SCqV9Bp48phUqpdv1Oiu2Ahx/ObIOKRcV3S+OVoOXu8w20Cfgyf3SKVm3QrFRrhkHwe5cggX62tDDBdydCNY57pUKikSBZNSqVmayIvBubIKDG/bSP92LbwMvuGDIVeXgW2tNJKecNxvDDoPbG+lXXEJ9eTGoDCRS1OppIjIanfMEdHVYFtvSaWS3gdP5k64YeoOsK2Xp1JJ+itPnppKE9cOsA8cBgfAbtBVIiGCvpNTqaSbwZMmz3rVkaBDNdlWtWH+BM+B2cldoBcZvUb4a5p2A50AnnwzldrJrIeNLzbafeEDeAveBeP/SPPIX/Ag2GttpEez/kepVCGHgg83jekwyJHXFZN2NtYeNc6uMp463UVgavVPsI4O4VLITZW6CVrvnlQaR6ZdvMhVoUknQuS7zPteAG3suG77YYhecmNtisf9sWE2a63UAvAic7F1ltwHGtx47WrodbyrkyDs0SMeqJGT2+s+gdoe9GQ4S239ePK6u8FJmzsk6uQQfRSaAjrnr23TGjXqDPBi39JOHhgRnQO26zPI8oO+4Yj8cm11v2XWM9KnZ3kgVwY+zgEnYlcbZK/yxcYG+IIH2iqM2Y8wzNSQfsp22CM9Zz1dHr2J43K2BwYsv2b5fPe3nMh1XOmNwoNpC/xWMgg5nCICdYPuZHhvB0+AN+3bJ7GCzJKEW/B5C6Ez2TOGlbEL+6B9oWu5xMbq5JeAo6Av0hxqR3yQ41anW+lAW0pHEZudPA99/8RnitQcWHwj18W6PLq+u97nyDngSqgB1CHHD/Cr7pkwUO0PD4HpzmiIMYgWR/Pp3zTMdpijdV6ZhTSyMx75GqKO6J1MDA71Lx3G+DbUXin+E6IJ4wl79mgYxvfJWumYDwUzgCal/WhkY812uJz62cL54OeBzdqENTa2Hqp+cZgaDybOAAAAAElFTkSuQmCC);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 10%;
+}
+
+input:required:valid {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAT2SURBVGhD7ZppyBVVGMff1DSjMjPLbPmgSVFUVET0oc0iqCgKbTGoTMSgnRaKwKBo0YoIrSiK6oMotoBRkhJm0UIQREQQCm20kUW222Ll7zf0wGXu3Jkz73vn3lfxD78PZ5Yz58455zn/88wd2K5tWJPhYngY1sBn8AP8B3/Ad/AhPAe3w8mwEwwL7Q5Xwbtgg+vyGyyBU2EH6Ln2hHvgJ4hG+cafgSvhJLCHWt/4ODgYzoE74U3YDHH/+zADevKDfMgcsNE+/F9YAWfBjlBX/tjr4ROIH+Sw9Ac3pgnwEsQDX4DDoBsaBZfCV2Ddm2AedF2+ISevD/kG7IEmtAssBnvaZz0OI6ErOhq+Byu22ydB03IebYTo+dEwJB0CG8AKl8GQK6yhw+FriGcPumeMTF+AFRkiR0CvdSDEi7zfA3VldFoJVrAWetkTeR0Lv4PzpvbcvBz8EU7svT3QZ0V77J3xHkiRQyomd1PRaTCK0P9IVkrQveANRovhpCng+vI3OHdKtQf8Ao7Hbi123dQi8CU/kZVKdB0Mx94I7Q/2iD2jd+uo96Du3LAXh2LHJ0Idn/Yi2Ma5WalAB4AXONFTKt4PXgPv8S05CfVMqXLofgDe737lNkjRLPAel4dCzQYvWJ6VqvUKeH0rN0GKXKXXQ/7+86FKmtd/4GcofHGPgZW5n6iS5s7K8g15A1J0KOTvFR1EiqInj8xKOb0OnjwxK5XLN+rurrUR4vhNkfuQ/L2i803RUvB6h1mbvgRP7puVqrUAWhthyD4FUuUQbr1fG6JJTdEd4D3zs1JOjjlPjs1K1dJEXgHOlefB7W0d6d9uhVfBN3wEpOoasK2FRtITjvutQZeB7S20K4ZQT24NChNp6qlNsSMrXTGHiW4E22omp00fgSdTJ1w/9SDY1muzUk76K0+enZWKpddxQWpaB0GZ7YlN3xlZKae7wJMmz4pkNHPt+Bz28kBDugQM5Q9lpXa5e43tr7aqTaeBJ9/KSsUyi+I1pkibmEunw5/gMwoXO6RH8/zHWalAO4OLkmnMfTxQIJ3qOogf083U0EzQPFp34ST+Xy6CXvNoVuog0y5eZFToJF1vGD6HmcmBoUjjp/ONpNwD0EkOq3h2qZWya73IXGyZJXdfbxLaa11/7gaNZF25mr8D1uNifAOUycnttZ9CabLbk+EstfVlGgP6rciom9i+GToNy5DW5jgwcx+9YDp2OlTJ+ev1WqNKnQderInc1QMVcmiFcxbf7Nvgj7wazgU/AN0C5nIjUS3OyftgN6jSReA9Jg2T/KC9Eju/VFutdL6ax18hGtoJI85CSA0WDuVIn17ogVS58XGDb9eXLZBFciE7E5zAT4NDSHwp9pB115EvNhbA1R6oqzBmP0I/U0OGYtthjww66/kUWInjUtvQa/k1y+c7l1J2rh3lljY8mLbgGOiFHE6xAzUq1h3ehTLMPgtW2tgnsRa1fuLzeUa9rsmecVsZcd8HTYVuyxAb0ckvAcdDI/KTWHzRddyaiy10oDWlo4jFTlZB45/4TJGaA4sV/S8wPBrfjfcpcg4YCTWAYULFxfIC6KmmwZMQjlVc1bU4mk//pmG2wxyt88ospDu7l+FbiHtE72RisK9/6XBfYkPtFT9JtDawDFd3e/YE6Mf3yVLpmI8CN0Wu7PooG2u2w3DqZwvng1vm7dqGNTCwBSL2gn4aTflvAAAAAElFTkSuQmCC);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: 10%;
 }
 
 .form-layout {
-  background-color: burlywood;
+  background-color: silver;
   max-width: 1000px;
   width: 70%;
   margin: 0 auto;
+  border-radius: 3px;
 }
 
 .form-row {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 7px;
+}
+
+@media (max-width: 750px) {
+  .form-row {
+    flex-direction: column;
+  }
+  
+  .name {
+    justify-content: center !important;
+  }
+
+  .input {
+    justify-content: center !important;
+  }
+}
+
+.half-row {
+  display: flex;
+  width: 100%;
+}
+
+.name {
+  justify-content: flex-end;
+}
+
+.input {
+  justify-content: flex-start;
+}
+
+.field-name {
+  margin-right: 5px;
+}
+
+.field-context {
+  margin-left: 5px;
+  border-radius: 1px;
 }
