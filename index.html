@@ -13,26 +13,26 @@
       <form id="survey-form" class="form-flex">
         <div class="form-row">
           <div class="half-row name">
-            <div class="field-name">*Name:</div>
+            <label id="name-label" class="field-name">*Name:</label>
           </div>
           <div class="half-row input">
-            <input id="name" class="field-context" type="text" name="name" required>
+            <input id="name" class="field-context" type="text" name="name" required placeholder="Enter your name">
           </div>
         </div>
         <div class="form-row">
           <div class="half-row name">
-            <div class="field-name">*Email:</div>
+            <label id="email-label" class="field-name">*Email:</label>
           </div>
           <div class="half-row input">
-            <input id="email" class="field-context" type="email" name="email" required>
+            <input id="email" class="field-context" type="email" name="email" required placeholder="Enter your email">
           </div>
         </div>
         <div class="form-row">
           <div class="half-row name">
-            <div class="field-name">*Age:</div>
+            <label id="number-label" class="field-name">*Age:</label>
           </div>
           <div class="half-row input">
-            <input id="number" class="field-context" type="text" name="age" required pattern="[0-9]{0,2}">
+            <input id="number" class="field-context" type="number" name="age" required pattern="[0-9]{0,2}" placeholder="Age">
           </div>
         </div>
         <input type="submit">
