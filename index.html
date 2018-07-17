@@ -13,7 +13,7 @@
       <form id="survey-form" class="form-flex">
         <div class="form-row">
           <div class="half-row name">
-            <label id="name-label" class="field-name">*Name:</label>
+            <label id="name-label" for="name" class="field-name">*Name:</label>
           </div>
           <div class="half-row input">
             <input id="name" class="field-context" type="text" name="name" required placeholder="Enter your name">
@@ -21,7 +21,7 @@
         </div>
         <div class="form-row">
           <div class="half-row name">
-            <label id="email-label" class="field-name">*Email:</label>
+            <label id="email-label" for="email" class="field-name">*Email:</label>
           </div>
           <div class="half-row input">
             <input id="email" class="field-context" type="email" name="email" required placeholder="Enter your email">
@@ -29,10 +29,41 @@
         </div>
         <div class="form-row">
           <div class="half-row name">
-            <label id="number-label" class="field-name">*Age:</label>
+            <label id="number-label" for="age" class="field-name">*Age:</label>
           </div>
           <div class="half-row input">
             <input id="number" class="field-context" type="number" name="age" required pattern="[0-9]{0,2}" placeholder="Age">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="half-row name">
+            <label id="dropdown" for="role" class="field-name">Which option best describes your current role?</label>
+          </div>
+          <div class="half-row input">
+            <select size="1" name="role" class="field-context">
+              <option disabled>Select an option</option>
+              <option value="Student" selected>Student</option>
+              <option value="Full Time Job">Full Time Job</option>
+              <option value="Full Time Learner">Full Time Learner</option>
+              <option value="Prefer not to say">Prefer not to say</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="half-row name">
+            <label class="field-name">*How likely is that you would recommend freeCodeCamp to a friend?</label>
+          </div>
+          <div class="half-row input columns-fields">
+            <div>
+              <input class="field-context" type="radio" name="recommendation" value="Definitely" required><label>Definitely</label>
+            </div>
+            <div>
+              <input class="field-context" type="radio" name="recommendation" value="Maybe" required><label>Maybe</label>
+            </div>
+            <div>
+              <input class="field-context" type="radio" name="recommendation" value="Not sure" required><label>Not sure</label>
+            </div>
           </div>
         </div>
         <input type="submit">

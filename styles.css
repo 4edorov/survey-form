@@ -67,3 +67,7 @@ input:required:valid {
   margin-left: 5px;
   border-radius: 1px;
 }
+
+.columns-fields {
+  flex-direction: column;
+}
