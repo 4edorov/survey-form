@@ -1,5 +1,5 @@
 body {
-  background-color: royalblue;
+  background-color: rgb(225, 142, 65);
   min-width: 500px;
 }
 
@@ -18,18 +18,20 @@ input:required:valid {
 }
 
 .form-layout {
-  background-color: silver;
+  background-color: rgb(245, 243, 243);
   max-width: 1000px;
   width: 70%;
   margin: 0 auto;
   border-radius: 3px;
+  border: 1px solid black;
+  font-size: 18px;
 }
 
 .form-row {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 7px;
+  margin-bottom: 28px;
 }
 
 @media (max-width: 750px) {
@@ -53,6 +55,7 @@ input:required:valid {
 
 .name {
   justify-content: flex-end;
+  text-align: right;
 }
 
 .input {
@@ -66,8 +69,22 @@ input:required:valid {
 .field-context {
   margin-left: 5px;
   border-radius: 1px;
+  height: 32px;
+}
+
+input.field-context {
+  width: 200px;
 }
 
 .columns-fields {
   flex-direction: column;
+}
+
+input[type=submit] {
+  padding: 5px 15px;
+  background: rgb(225, 142, 65);
+  border: 0 none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
 }

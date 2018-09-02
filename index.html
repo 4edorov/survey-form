@@ -32,15 +32,25 @@
             <label id="number-label" for="age" class="field-name">*Age:</label>
           </div>
           <div class="half-row input">
-            <input id="number" class="field-context" type="number" name="age" required pattern="[0-9]{0,2}" placeholder="Age">
+            <input 
+              id="number"
+              class="field-context"
+              type="number"
+              name="age"
+              required
+              pattern="[0-9]{1,2}"
+              min="1"
+              max="100"
+              placeholder="Age"
+            >
           </div>
         </div>
         <div class="form-row">
           <div class="half-row name">
-            <label id="dropdown" for="role" class="field-name">Which option best describes your current role?</label>
+            <label for="role" class="field-name">Which option best describes your current role?</label>
           </div>
           <div class="half-row input">
-            <select size="1" name="role" class="field-context">
+            <select id="dropdown" size="1" name="role" class="field-context">
               <option disabled>Select an option</option>
               <option value="Student" selected>Student</option>
               <option value="Full Time Job">Full Time Job</option>
@@ -52,23 +62,92 @@
         </div>
         <div class="form-row">
           <div class="half-row name">
-            <label class="field-name">*How likely is that you would recommend freeCodeCamp to a friend?</label>
+            <label for="recommendation" class="field-name">*How likely is that you would recommend freeCodeCamp to a friend?</label>
           </div>
           <div class="half-row input columns-fields">
             <div>
-              <input class="field-context" type="radio" name="recommendation" value="Definitely" required><label>Definitely</label>
+              <input type="radio" name="recommendation" value="Definitely" required><label>Definitely</label>
             </div>
             <div>
-              <input class="field-context" type="radio" name="recommendation" value="Maybe" required><label>Maybe</label>
+              <input type="radio" name="recommendation" value="Maybe"><label>Maybe</label>
             </div>
             <div>
-              <input class="field-context" type="radio" name="recommendation" value="Not sure" required><label>Not sure</label>
+              <input type="radio" name="recommendation" value="Not sure"><label>Not sure</label>
             </div>
           </div>
         </div>
-        <input type="submit">
+        <div class="form-row">
+          <div class="half-row name">
+            <label for="like" class="field-name">What do you like most in FCC:</label>
+          </div>
+          <div class="half-row input">
+            <select size="1" name="like" class="field-context">
+              <option disabled selected>Select an option</option>
+              <option value="Challenges">Challenges</option>
+              <option value="Projects">Projects</option>
+              <option value="Community">Community</option>
+              <option value="Open Source">Open Source</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="half-row name">
+            <label for="future" class="field-name">
+              Things that should be improved in the future<br/>
+              (Check all that apply):
+            </label>
+          </div>
+          <div class="half-row input columns-fields">
+            <div>
+              <input type="checkbox" name="future" value="Front-end Projects"><label>Front-end Projects</label>
+            </div>
+            <div>
+              <input type="checkbox" name="future" value="Back-end Projects"><label>Back-end Projects</label>
+            </div>
+            <div>
+              <input type="checkbox" name="future" value="Data Visualization"><label>Data Visualization</label>
+            </div>
+            <div>
+              <input type="checkbox" name="future" value="Challenges"><label>Challenges</label>
+            </div>
+            <div>
+              <input type="checkbox" name="future" value="Open Source Community"><label>Open Source Community</label>
+            </div>
+            <div>
+              <input type="checkbox" name="future" value="Gitter help rooms"><label>Gitter help rooms</label>
+            </div>
+            <div>
+              <input type="checkbox" name="future" value="Videos"><label>Videos</label>
+            </div>
+            <div>
+              <input type="checkbox" name="future" value="City Meetups"><label>City Meetups</label>
+            </div>
+            <div>
+              <input type="checkbox" name="future" value="Wiki"><label>Wiki</label>
+            </div>
+            <div>
+              <input type="checkbox" name="future" value="Forum"><label>Forum</label>
+            </div>
+            <div>
+              <input type="checkbox" name="future" value="Additional Courses"><label>Additional Courses</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="half-row name">
+            <label id="suggest" for="suggest" class="field-name">Any Comments or Suggestions?</label>
+          </div>
+          <div class="half-row input">
+            <textarea id="suggest" name="suggest" rows="5" cols="30" placeholder="Enter your comment here ..."></textarea>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <input id="submit" type="submit" value="Submit">
+        </div>
       </form>
     </div>
     <script src="scripts.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
